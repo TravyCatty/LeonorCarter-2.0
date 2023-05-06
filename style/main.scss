@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap");
 
 body {
-  font-family: 'Bebas Neue', sans-serif;
-  letter-spacing: 1px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -15,6 +15,7 @@ header {
     width: 100%;
 }
 #wrapper {
+    width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -57,6 +58,7 @@ header {
 }
 // Title & descr align center ----
 .center {
+    text-align: center;
     margin: 0 auto;
     max-width: 31.25rem;
 }
@@ -66,7 +68,6 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
     padding: 1rem 1.5rem;
     gap: 1.25rem;
     color: #000;
@@ -133,26 +134,34 @@ img {
     text-align: center;
 }
 // Skills
-
+.skills {
+    padding: 0 5vw;
+    .title {
+        margin-bottom: 1.5rem;
+    }
+    .descr {
+        margin-bottom: 1.5rem;
+    }
+}
 .skills-flex {
     display: flex;
-    justify-content: space-between;
-    gap: 50px;
+    justify-content: center;
+    gap: 8vw;
+    width: 100%;
 }
 .front,
 .designer {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
-    gap: 50px;
+    max-width: 550px;
     width: 100%;
 }
 .pr-bar__html,
 .pr-bar__css,
+.pr-bar__react,
 .pr-bar__figma,
 .pr-bar__photoshop {
     width: 100%;
-
     .descr {
         float: right;
     }
@@ -168,6 +177,11 @@ img {
         background-color: #b71540;
         position: relative;
         overflow: hidden;
+    }
+}
+.pr-bar__react {
+    .progressbar > span {
+        width: 50%;
     }
 }
 .pr-bar__css {
@@ -188,34 +202,61 @@ img {
 // portfolio
 
 .portfolio {
-    .portfolio__gallery {
-        display: flex;
-        justify-content: center;
-        gap: 40px;
+    .title,
+    .descr {
+        margin-bottom: 1.5rem;
     }
-    .first,
-    .second {
-        width: 300px;
-        height: 300px;
-        background-repeat: no-repeat;
 
+    .portfolio__gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 1rem;
+    }
+    .project {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    .first {
-        background: url(../img/Logoipsum.jpg);
-        img {
-            max-width: 128px;
-            max-height: 34px;
-            margin: 0;
+        width: 350px;
+        height: 200px;
+        background: #777;
+        &__britlex {
+            background: url("https://images.unsplash.com/photo-1503676382389-4809596d5290?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
-    }
-    .second {
-        background: url(../img/kea.jpg);
-        p {
-            font-size: 36px;
-            color: #fff;
+        &__perfume {
+            background: url("https://images.unsplash.com/photo-1590736704728-f4730bb30770?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=474&q=80");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        &__dragndrop {
+            background: url("https://images.unsplash.com/photo-1494797262163-102fae527c62?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fGhvbGQlMjBvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &__kea {
+            background: url("https://images.unsplash.com/photo-1552404200-b22566b2317b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fG1pbGt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        a {
+            cursor: pointer;
+            background: transparent;
+            transition: 0.05s;
+            font-size: 3rem;
+            color: #000;
+            background: #fff;
+            border: 2px solid #000;
+            padding: 0.5rem 1rem;
+            &:hover {
+                transform: translate(4px, 4px);
+                box-shadow: -4px -4px #000;
+            }
         }
     }
 }
