@@ -1,7 +1,14 @@
-* {
-  font-family: "Lato", sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap");
+body {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1px;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
 header {
   width: 100%;
 }
@@ -53,7 +60,6 @@ header {
 }
 
 .center {
-  text-align: center;
   margin: 0 auto;
   max-width: 31.25rem;
 }
@@ -63,6 +69,7 @@ header {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
   padding: 1rem 1.5rem;
   gap: 1.25rem;
   color: #000;
@@ -74,12 +81,12 @@ header {
 }
 
 .descr {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #000;
 }
 
 .subtitle {
-  font-size: 2.25rem;
+  font-size: 2rem;
   color: #000;
   margin-bottom: 1.25rem;
 }
@@ -90,6 +97,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+
+.about .title {
+  margin-bottom: 1.5rem;
+}
+.about .descr {
+  margin-bottom: 1.5rem;
 }
 
 img {
@@ -99,28 +114,31 @@ img {
 }
 
 .flex {
+  text-align: left;
   display: flex;
   justify-content: space-evenly;
+  gap: 8vw;
 }
 
-.text-info {
+.about-text {
   max-width: 500px;
-}
-
-.text-info__flex {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
-
-.text-info__flex > * {
+.about-text > * {
   flex: 1 1 17em;
 }
-
-.text-info.text-info__flex p.descr {
+.about-text .subtitle {
+  line-height: 1.1;
   text-align: center;
 }
 
-.subtitle-info__flex {
+.about-flex p.descr {
+  text-align: center;
+}
+
+.subtitle-flex {
   flex-direction: column;
   text-align: center;
 }
