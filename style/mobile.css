@@ -5,7 +5,7 @@
     padding: 20px;
   }
   .header__title {
-    padding-top: 18vh;
+    padding-top: 14vh;
   }
   img {
     margin-bottom: 80px;
@@ -119,7 +119,7 @@
     align-items: center;
   }
   .header__title {
-    padding-top: 15vh;
+    padding-top: 10vh;
   }
   .menu__btn {
     top: 20px;

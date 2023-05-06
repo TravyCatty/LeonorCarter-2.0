@@ -1,5 +1,4 @@
 const btnScrollToTop = document.querySelector('#top-btn');
-
 btnScrollToTop.addEventListener('click', () => {
   window.scrollTo({
     top: 0,

@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="./style/nullstyle.css">
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/mobile.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- <button id="top-btn"><i class="fa-solid fa-angle-up"></i></i></button> -->
     <header id="home">
         <div class="wrapper">
-            <nav class="header__nav">
+            <nav data-aos="fade-down" class="header__nav">
                 <a class="link" href="#home">Leonor</a>
                 <div class="nav__list">
                     <a class="link" href="#home">Home</a>
@@ -40,11 +41,11 @@
                 </div>
             </nav>
 
-            <article class="header__title center">
-                <p class="title">Hi, I’m Leonor</p>
-                <p class="descr">Frontend developer and web designer</p>
-                <p class="descr">Medium level experience in web design and
-                    development knowledge.</p>
+            <article data-aos="zoom-in-up" data-aos-delay="300" class="header__title center">
+                <h1 class="title">Hi, I’m Leonor</h1>
+                <h2 class="descr">Frontend developer and web designer</h2>
+                <h2 class="descr">Medium level experience in web design and
+                    development knowledge.</h2>
             </article>
         </div>
     </header>
@@ -81,59 +82,57 @@
     </section>
 
     <section id="skills" class="skills">
-        <div class="wrapper">
-            <div class="about__title center">
-                <p class="title">Skills</p>
-                <p class="descr">My technical level</p>
-            </div>
-            <div class="skills-flex">
-                <div class="front">
+        <div class="about__title center">
+            <p class="title">Skills</p>
+            <p class="descr">My technical level</p>
+        </div>
+        <div class="skills-flex">
+            <div class="front">
 
-                    <div class="text-block">
-                        <div class="subtitle">Frontend developer</div>
-                        <p class="descr">More 6 months</p>
-                    </div>
+                <div class="text-block">
+                    <div class="subtitle">Frontend developer</div>
+                    <p class="descr">More 6 months</p>
+                </div>
 
-                    <div class="pr-bar__html">
-                        <span class="subtitle">HTML</span>
-                        <span class="descr">80%</span>
-                        <div class="progressbar">
-                            <span class="progress-bar"></span>
-                        </div>
-                    </div>
-
-                    <div class="pr-bar__css">
-
-                        <span class="subtitle">CSS</span>
-                        <span class="descr">70%</span>
-
-                        <div class="progressbar">
-                            <span class="progress-bar"></span>
-                        </div>
+                <div class="pr-bar__html">
+                    <span class="subtitle">HTML</span>
+                    <span class="descr">80%</span>
+                    <div class="progressbar">
+                        <span class="progress-bar"></span>
                     </div>
                 </div>
 
-                <div class="designer">
+                <div class="pr-bar__css">
 
-                    <div class="text-block">
-                        <div class="subtitle">Designer</div>
-                        <p class="descr">More 1 month</p>
+                    <span class="subtitle">CSS</span>
+                    <span class="descr">70%</span>
+
+                    <div class="progressbar">
+                        <span class="progress-bar"></span>
                     </div>
+                </div>
+            </div>
 
-                    <div class="pr-bar__figma">
-                        <span class="subtitle">Figma</span>
-                        <span class="descr">80%</span>
-                        <div class="progressbar">
-                            <span class="progress-bar"></span>
-                        </div>
+            <div class="designer">
+
+                <div class="text-block">
+                    <div class="subtitle">Designer</div>
+                    <p class="descr">More 1 month</p>
+                </div>
+
+                <div class="pr-bar__figma">
+                    <span class="subtitle">Figma</span>
+                    <span class="descr">80%</span>
+                    <div class="progressbar">
+                        <span class="progress-bar"></span>
                     </div>
+                </div>
 
-                    <div class="pr-bar__photoshop">
-                        <span class="subtitle">Photoshop</span>
-                        <span class="descr">60%</span>
-                        <div class="progressbar">
-                            <span class="progress-bar"></span>
-                        </div>
+                <div class="pr-bar__photoshop">
+                    <span class="subtitle">Photoshop</span>
+                    <span class="descr">60%</span>
+                    <div class="progressbar">
+                        <span class="progress-bar"></span>
                     </div>
                 </div>
             </div>
@@ -142,66 +141,62 @@
 
 
     <section id="portfolio" class="portfolio">
-        <div class="wrapper">
-            <div class="portfolio__title center">
-                <p class="title">Portfolio</p>
-                <p class="descr">My works</p>
-            </div>
-            <div class="portfolio__gallery">
-                <a class="project-link" target="_blank"
-                    href="https://travycatty.github.io/leonor/other%20projects/LOGOIPSUM/www/index.html">
-                    <div class="first"><img src="./img/Logoipsum_logo.svg" alt=""></div>
-                </a>
-                <a class="project-link" target="_blank"
-                    href="https://travycatty.github.io/leonor/other%20projects/k%20e%20a/index.html">
-                    <div class="second">
-                        <p>k e a</p>
-                    </div>
-                </a>
-            </div>
+        <div class="portfolio__title center">
+            <p class="title">Portfolio</p>
+            <p class="descr">My works</p>
+        </div>
+        <div class="portfolio__gallery">
+            <a class="project-link" target="_blank"
+                href="https://travycatty.github.io/leonor/other%20projects/LOGOIPSUM/www/index.html">
+                <div class="first"><img src="./img/Logoipsum_logo.svg" alt=""></div>
+            </a>
+            <a class="project-link" target="_blank"
+                href="https://travycatty.github.io/leonor/other%20projects/k%20e%20a/index.html">
+                <div class="second">
+                    <p>k e a</p>
+                </div>
+            </a>
         </div>
     </section>
 
 
-    <section id="contact" class="contact">
-        <div class="wrapper">
-            <div class="portfolio__title center">
-                <p class="title">Contact me</p>
-                <p class="descr">Get in touch</p>
-            </div>
-            <form class="form" action="#" method="get">
-                <div><input placeholder="Name" class="form-name" type="text" name="username" id=""></div>
-                <div><input placeholder="What’s your email?" class="form-email" type="email" name="useremale" id="">
-                </div>
-                <div><input placeholder="Your qeustion..." class="form-message" type="text"></div>
-                <button class="button" type="submit">Send message</button>
-            </form>
+    <section data-aos="fade-up" id="contact" class="contact">
+        <div class="portfolio__title center">
+            <p class="title">Contact me</p>
+            <p class="descr">Get in touch</p>
         </div>
+        <form class="form" action="#" method="get">
+            <div><input placeholder="Name" class="form-name" type="text" name="username" id=""></div>
+            <div><input placeholder="What’s your email?" class="form-email" type="email" name="useremale" id="">
+            </div>
+            <div><input placeholder="Your qeustion..." class="form-message" type="text"></div>
+            <button class="button" type="submit">Send message</button>
+        </form>
     </section>
 
 
     <footer class="footer">
-        <div class="wrapper">
-            <div class="flex-box">
-                <div class="footer__title">
-                    <p class="title">Leonor</p>
-                    <p class="descr">Frontend developer <br>
-                        Web designer</p>
-                </div>
-                <div class="social-links">
-                    <p class="subtitle">Follow me on</p>
-                    <ul class="links">
-                        <li><a target="_blank" href="https://www.behance.net/leonidbgh2faf"><img
-                                    src="./img/la_behance.svg" alt=""></a></li>
-                        <li><a target="_blank" href="https://www.instagram.com/travycattysu/"><img
-                                    src="./img/akar-icons_instagram-fill.svg" alt=""></a></li>
-                        <li><a target="_blank" href="https://twitter.com/TravyCattySU"><img
-                                    src="./img/akar-icons_twitter-fill.svg" alt=""></a></li>
-                    </ul>
-                </div>
+        <div class="flex-box">
+            <div class="footer__title">
+                <p class="title">Leonor</p>
+                <p class="descr">Frontend developer <br>
+                    Web designer</p>
+            </div>
+            <div class="social-links">
+                <p class="subtitle">Follow me on</p>
+                <ul class="links">
+                    <li><a target="_blank" href="https://www.behance.net/leonidbgh2faf"><img src="./img/la_behance.svg"
+                                alt=""></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/travycattysu/"><img
+                                src="./img/akar-icons_instagram-fill.svg" alt=""></a></li>
+                    <li><a target="_blank" href="https://twitter.com/TravyCattySU"><img
+                                src="./img/akar-icons_twitter-fill.svg" alt=""></a></li>
+                </ul>
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/AOS.js"></script>
     <script src="./js/main.js"></script>
 </body>
 

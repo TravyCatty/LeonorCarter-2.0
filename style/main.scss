@@ -3,13 +3,9 @@
 }
 header {
     width: 100%;
+    padding-top: 3.125rem;
 }
-.wrapper {
-    padding-top: 14vh;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 1440px;
-}
+
 .header__nav {
     position: fixed;
     display: flex;
@@ -53,8 +49,9 @@ header {
 
 .header__title {
     display: flex;
-    gap: 20px;
     flex-direction: column;
+    padding: 1rem 1.5rem;
+    gap: 1.25rem;
     color: #000;
 }
 .title {
@@ -169,7 +166,6 @@ img {
     margin: -55px 0 0;
 }
 .portfolio {
-    margin-bottom: 50px;
     .portfolio__title.center p.descr {
     }
 
@@ -215,7 +211,8 @@ img {
     margin: -55px 0 0;
 }
 .contact {
-    margin-bottom: 50px;
+    margin: 0;
+    padding: 0;
 }
 .form-name,
 .form-email,
