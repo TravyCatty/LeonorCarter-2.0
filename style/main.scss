@@ -68,12 +68,7 @@ header {
     margin-bottom: 1.25rem;
 }
 // About ----
-#about:before {
-    display: block;
-    content: "";
-    height: 55px;
-    margin: -55px 0 0;
-}
+
 img {
     max-width: 350px;
     width: 100%;
@@ -101,12 +96,7 @@ img {
     text-align: center;
 }
 // Skills
-#skills:before {
-    display: block;
-    content: "";
-    height: 55px;
-    margin: -55px 0 0;
-}
+
 .skills-flex {
     display: flex;
     justify-content: space-between;
@@ -159,12 +149,7 @@ img {
     }
 }
 // portfolio
-#portfolio:before {
-    display: block;
-    content: "";
-    height: 80px;
-    margin: -55px 0 0;
-}
+
 .portfolio {
     .portfolio__title.center p.descr {
     }
@@ -199,17 +184,9 @@ img {
             color: #fff;
         }
     }
-    .project-link:hover {
-        transform: translateY(-15px);
-    }
 }
 // contact me
-#contact:before {
-    display: block;
-    content: "";
-    height: 80px;
-    margin: -55px 0 0;
-}
+
 .contact {
     margin: 0;
     padding: 0;

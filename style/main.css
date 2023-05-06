@@ -75,13 +75,6 @@ header {
   margin-bottom: 1.25rem;
 }
 
-#about:before {
-  display: block;
-  content: "";
-  height: 55px;
-  margin: -55px 0 0;
-}
-
 img {
   max-width: 350px;
   width: 100%;
@@ -113,13 +106,6 @@ img {
 .subtitle-info__flex {
   flex-direction: column;
   text-align: center;
-}
-
-#skills:before {
-  display: block;
-  content: "";
-  height: 55px;
-  margin: -55px 0 0;
 }
 
 .skills-flex {
@@ -181,13 +167,6 @@ img {
   width: 60%;
 }
 
-#portfolio:before {
-  display: block;
-  content: "";
-  height: 80px;
-  margin: -55px 0 0;
-}
-
 .portfolio .portfolio__gallery {
   display: flex;
   justify-content: center;
@@ -216,16 +195,6 @@ img {
 .portfolio .second p {
   font-size: 36px;
   color: #fff;
-}
-.portfolio .project-link:hover {
-  transform: translateY(-15px);
-}
-
-#contact:before {
-  display: block;
-  content: "";
-  height: 80px;
-  margin: -55px 0 0;
 }
 
 .contact {
