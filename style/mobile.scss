@@ -4,6 +4,9 @@
         margin: 0 auto;
         padding: 20px;
     }
+    .header__title {
+        padding-top: 18vh;
+    }
     img {
         margin-bottom: 80px;
     }
@@ -43,7 +46,7 @@
         position: absolute;
         width: 100%;
         height: 3px;
-        background: #333;
+        background: #000;
         transition: 0.3s;
     }
     .menu__btn > span::before {
@@ -118,6 +121,10 @@
     }
     .header__nav {
         padding: 20px 50px;
+        align-items: center;
+    }
+    .header__title {
+        padding-top: 15vh;
     }
     .menu__btn {
         top: 20px;
