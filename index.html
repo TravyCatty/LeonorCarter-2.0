@@ -169,13 +169,23 @@
                 <h1 class="title">Contact me</h1>
                 <h2 class="descr">Get in touch</h2>
             </div>
-            <!-- Доделать форму -->
-            <form class="form" action="#" method="get">
-                <div><input placeholder="Name" class="form-name" type="text" name="username" id=""></div>
-                <div><input placeholder="What’s your email?" class="form-email" type="email" name="useremale" id="">
+            <form class="contact-form">
+                <div class="contact-text">
+                    <label for="name">Enter your name:</label>
+                    <input type="text" id="name" name="name">
                 </div>
-                <div><input placeholder="Your qeustion..." class="form-message" type="text"></div>
-                <button class="button" type="submit">Send message</button>
+
+                <div class="contact-text">
+                    <label for="email">Enter your email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="contact-text">
+                    <label for="question">Enter your question:</label>
+                    <input type="text" id="question" name="question">
+                </div>
+
+                <input class="send" type="submit" value="Send!">
             </form>
         </div>
     </section>
