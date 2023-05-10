@@ -1,14 +1,11 @@
 @media (max-width: 1024px) {
-  .wrapper {
-    max-width: 864px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  .header__title {
-    padding-top: 14vh;
-  }
-  img {
-    margin-bottom: 80px;
+  #wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
   .nav__list {
     display: none;
@@ -18,8 +15,8 @@
     flex-direction: column;
     align-items: center;
   }
-  .text-info.text-info__flex p.descr {
-    margin-bottom: 50px;
+  .flex img {
+    margin: 0;
   }
   .hamburger__menu {
     display: flex;
@@ -104,10 +101,6 @@
     flex-direction: column;
     align-items: center;
     text-align: start;
-    gap: 50px;
-  }
-  .skills-flex .descr {
-    text-align: left;
   }
 }
 @media (max-width: 650px) {
@@ -155,9 +148,6 @@
   .menu__btn {
     top: 20px;
     right: 20px;
-  }
-  img {
-    margin-bottom: 30px;
   }
   .title {
     color: #333;

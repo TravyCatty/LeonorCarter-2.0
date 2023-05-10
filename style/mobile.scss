@@ -1,15 +1,13 @@
 @media (max-width: 1024px) {
-    .wrapper {
-        max-width: 864px;
-        margin: 0 auto;
-        padding: 20px;
+    #wrapper {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
-    .header__title {
-        padding-top: 14vh;
-    }
-    img {
-        margin-bottom: 80px;
-    }
+
     .nav__list {
         display: none;
     }
@@ -17,9 +15,9 @@
         width: 100%;
         flex-direction: column;
         align-items: center;
-    }
-    .text-info.text-info__flex p.descr {
-        margin-bottom: 50px;
+        img {
+            margin: 0;
+        }
     }
     // Hamburger
     .hamburger__menu {
@@ -57,7 +55,6 @@
         content: "";
         top: 16px;
     }
-
     .menu__box {
         display: inline-block;
         position: fixed;
@@ -73,7 +70,6 @@
         background: #eceff1;
         transition: 0.3s;
     }
-
     .menu__item {
         display: inline-block;
         margin-bottom: 50px;
@@ -108,13 +104,8 @@
         flex-direction: column;
         align-items: center;
         text-align: start;
-        gap: 50px;
-        .descr {
-            text-align: left;
-        }
     }
 }
-
 @media (max-width: 650px) {
     #about {
         margin-bottom: 0px;
@@ -163,7 +154,6 @@
         right: 20px;
     }
     img {
-        margin-bottom: 30px;
     }
     .title {
         color: #333;
