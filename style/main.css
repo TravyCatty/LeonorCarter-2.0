@@ -4,6 +4,11 @@ body {
   letter-spacing: 1px;
 }
 
+main {
+  width: min(300ch, 100% - 4rem);
+  margin-inline: auto;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
@@ -11,6 +16,10 @@ body {
 }
 header {
   width: 100%;
+}
+
+.none {
+  display: none;
 }
 
 #wrapper {
@@ -32,7 +41,8 @@ header {
   width: 100%;
   left: 0;
   top: 0;
-  padding: 1.25rem 6.25rem;
+  height: 5rem;
+  padding: 0 4rem;
   z-index: 10;
 }
 
@@ -67,11 +77,11 @@ header {
 }
 
 .header__title {
+  padding-top: 5rem;
   height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 1rem 1.5rem;
   gap: 1.25rem;
   color: #000;
 }
@@ -93,12 +103,12 @@ header {
 }
 
 #about {
-  height: 100vh;
-  justify-content: center;
+  padding-top: 5rem;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
+  height: 100vh;
 }
 
 .about .title {
@@ -117,8 +127,8 @@ img {
 .flex {
   text-align: left;
   display: flex;
+  gap: 1rem;
   justify-content: space-evenly;
-  gap: 8vw;
 }
 
 .about-text {
@@ -145,7 +155,11 @@ img {
 }
 
 .skills {
-  padding: 0 5vw;
+  height: 100vh;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .skills .title {
   margin-bottom: 1.5rem;
@@ -156,8 +170,8 @@ img {
 
 .skills-flex {
   display: flex;
-  justify-content: center;
-  gap: 8vw;
+  justify-content: space-evenly;
+  gap: 1rem;
   width: 100%;
 }
 
@@ -211,7 +225,7 @@ img {
 }
 
 .pr-bar__css .progressbar > span {
-  width: 70%;
+  width: 85%;
 }
 
 .pr-bar__figma .progressbar > span {
@@ -222,6 +236,13 @@ img {
   width: 60%;
 }
 
+.portfolio {
+  padding-top: 5rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .portfolio .title,
 .portfolio .descr {
   margin-bottom: 1.5rem;
@@ -232,7 +253,6 @@ img {
   grid-template-rows: auto;
   gap: 1rem;
   width: 100%;
-  padding: 0 6vw;
 }
 .portfolio .project {
   display: flex;
@@ -281,6 +301,15 @@ img {
   box-shadow: -4px -4px #000;
 }
 
+#contact {
+  padding-top: 5rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .title,
 .descr {
   margin-bottom: 1.5rem;
@@ -290,7 +319,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 700px;
+  max-width: 1000px;
   width: 100%;
   gap: 20px;
 }
@@ -320,11 +349,12 @@ img {
   font-size: 2rem;
   background: #000;
   color: #fff;
-  height: 100%;
   min-width: 260px;
+  height: 45px;
   align-items: center;
 }
 .contact-form input {
+  height: 45px;
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
   background: #fff;
