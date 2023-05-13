@@ -14,11 +14,17 @@
   }
   // Burger --------------------------------------
   .burger {
+    background: url("../img/burger-menu.svg");
+    object-fit: cover;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
     display: block;
-    border: 2px solid #000;
-    background: transparent;
-    font-size: 1.2rem;
-    padding: 0.5rem 1rem;
+  }
+  .cross {
+    background: url("../img/cross.svg");
   }
   .navigation-mobile {
     position: absolute;
@@ -29,7 +35,7 @@
     width: 45vw;
     height: 400px;
     height: 100vh;
-    transition: 0.3s;
+    transition: ease 0.5s;
     border-right: 2px solid #000;
     background: #fff;
     &__links {

@@ -3,6 +3,6 @@ const mobileNav = document.querySelector('.navigation-mobile')
 // active-mobile-nav
 function active() {
   mobileNav.classList.toggle('active')
-  console.log('adada')
+  burger.classList.toggle('cross')
 }
 burger.addEventListener('click', active)
